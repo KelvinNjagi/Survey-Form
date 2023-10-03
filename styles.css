@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Rest of your CSS rules */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+/* Add this CSS to style the scrollbar and hide it */
+body::-webkit-scrollbar {
+    width: 0.1em; /* Set the width of the scrollbar to 0 */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the thumb to transparent */
+}
+
+body {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Rest of your CSS rules */
+
+#title {
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    
+}
+
+
+#description {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    font-size: 1.125rem;
+}
+
+#survey-form {
+    background-color:rgba(dark grey);
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    width: 720px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+.main-input select {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    margin-top: 8px;
+}
+
+.main-input input {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    margin-top: 8px;
+}
+
+textarea {
+    color: #495057;
+    width: 100%;
+    padding: 0.625rem;
+    min-height: 120px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+}
+
+button {
+    color: #0b3966;
+    border: none;
+    width: 100%;
+    color: rgb(90, 14, 77);
+    padding: 0.75rem;
+    cursor: pointer;
+    
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 
+115deg
+, rgba(58, 58, 158, 0.8), rgba(39, 20, 105, 0.7) );
+   
+}
